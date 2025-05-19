@@ -105,6 +105,9 @@ def summarize_evaluation_outputs():
         row.append(f"{avg_score:.1f}" if avg_score is not None else "N/A")
         table_data.append(row)
 
+    # sort the table data by average score
+    table_data.sort(key=lambda x: (x[-1] if x[-1] != "N/A" else float('-inf')), reverse=True)
+
     print("\n" + "="*50 + " Summary Table " + "="*50)
     print(tabulate(table_data, headers=headers, tablefmt="github", floatfmt=".1f"))
 
