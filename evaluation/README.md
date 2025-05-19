@@ -4,9 +4,10 @@ You can install the required packages with the following command:
 cd latex2sympy
 pip install -e .
 cd ..
-pip install -r requirements.txt 
 pip install vllm==0.5.1 --no-build-isolation
-pip install transformers==4.42.3
+pip install transformers datasets
+pip install flash_attn
+pip install word2number Pebble timeout-decorator
 ```
 
 ### Evaluation
