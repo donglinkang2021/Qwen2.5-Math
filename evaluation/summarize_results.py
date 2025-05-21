@@ -8,6 +8,7 @@ def summarize_evaluation_outputs():
     accounting for a deeper directory structure, and prints a summary table.
     """
     base_output_dir = Path("outputs")
+    # base_output_dir = Path("outputs/data2/linkdom/converted_model_safetensors")
     if not base_output_dir.is_dir():
         print(f"Error: Base output directory '{base_output_dir}' not found.")
         print(f"Please ensure this script is run from the 'evaluation' directory,")
