@@ -1,5 +1,5 @@
 from grader import math_equal
-from parser import strip_string
+from eval_parser import strip_string
 import timeout_decorator
 from collections import defaultdict, Counter
 from utils import load_jsonl

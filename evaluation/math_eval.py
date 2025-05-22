@@ -11,7 +11,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from evaluate import evaluate
 from utils import set_seed, load_jsonl, save_jsonl, construct_prompt
-from parser import *
+from eval_parser import *
 from trajectory import *
 from data_loader import load_data
 from python_executor import PythonExecutor
