@@ -7,7 +7,8 @@ def summarize_evaluation_outputs():
     Parses evaluation output directories to summarize model scores using pathlib,
     accounting for a deeper directory structure, and prints a summary table.
     """
-    base_output_dir = Path("outputs1")
+    # base_output_dir = Path(".cache/outputs1")
+    base_output_dir = Path("outputs")
     # base_output_dir = Path("outputs/data2/linkdom/converted_model_safetensors")
     if not base_output_dir.is_dir():
         print(f"Error: Base output directory '{base_output_dir}' not found.")
